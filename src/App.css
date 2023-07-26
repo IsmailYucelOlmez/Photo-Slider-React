@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 16px;
+  font-family: 'Lunasima', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
+  width: 100%;
+  height: 80%;
+}
+
+header{
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  background-color: #219ebc;
+  display: flex;
+  justify-content: center;
+}
+
+.App{
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.image-field{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+  margin-top: 30px;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev-btn, .next-btn, .element-points{
+  position: absolute;
+}
+
+.prev-btn{
+  top: 50%;
+  left: 1%;
+}
+
+.next-btn{
+  top: 50%;
+  left: 98%;
+}
+
+.element-points{
+  top: 95%;
+  left: 50%;
+  display: flex;
+}
+
+.point{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px;
+}
+
+i{
+  color: #fff; 
+}
+
+.active{
+  border: 2px solid black ;
 }
